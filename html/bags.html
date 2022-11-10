@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .Fast_products
+{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width:100%;
+    margin: auto;
+    grid-gap: 20px;
+   
+}
+#offer
+{
+    display: flex;
+    justify-content: space-between;
+}
+#offer>h3:nth-child(2)
+{
+    color: #3cc101;
+    font-size: 18px
+}
+#offer>h2{
+    color: #f98d29;
+    font-size: 18px
+}
+
+#card_text
+{
+    font-style: Roboto, sans-serif;
+    /* letter-spacing: 0.8px; */
+    padding: 0px,10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #455a64;
+     
+}
+
+    button
+    {
+        background-color: #3cc101;
+        padding: 5px 20px;
+        border: none;
+        display: block;
+        flex-direction: row-reverse;
+        color: white;
+        margin-left: 240px;
+    }
+</style>
+<body>
+    <div class="Fast_products">
+        
+      </div>
+</body>
+</html>
+<script>
+fetch("http://localhost:3000/bags")
+     .then((res)=> res.json())
+     .then((data)=>{
+        console.log(data)
+        display_card(data)
+     })
+
+
+    function display_card(data)
+    {
+let x=document.querySelector(".Fast_products")
+        data.forEach((el)=>{
+        let card=document.createElement("div")
+        let pro_img=document.createElement("img")
+        pro_img.setAttribute("src",el.img)
+        let title= document.createElement("h3")
+        title.setAttribute("id","card_text")
+        title.innerText= el.title
+        let rating=document.createElement("button")
+        rating.innerText= el.rating
+        let div=document.createElement("div")
+        div.setAttribute("id","offer")
+        let price=document.createElement("h2")
+        price.innerText=el.price
+        let offer=document.createElement("h3")
+        offer.innerText=el.dicount
+        div.append(price,offer)
+        card.append(pro_img,title,rating,div)
+        x.append(card)
+        }) 
+    }
+</script>

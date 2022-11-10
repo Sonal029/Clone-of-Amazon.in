@@ -36,7 +36,7 @@
 }
 #carouselExampleControls
 {
-    margin:20px
+    margin:0px 10px
 }
 #footer1
     {
@@ -51,31 +51,7 @@
       height: 50px;
       padding: 10px;
     }
-    #nav_row1 
-    {
-      display: flex;
-      justify-content: space-between;
-    }
-    #nav_right
-    {
-     display: flex;
-     justify-content: space-between;
-    }
-    #nav_right>a
-    {
-       margin: 10px;
-    }
-    #nav_row2
-    {
-     display: flex;
-    }
-    #mail>button{
-        border: none;
-        background-color: #f98d29;
-        padding: 0px 12px;
-        border-radius: 5px;
-
-    }
+    
     #channels
     {
         display: flex;
@@ -88,12 +64,18 @@
        font-size: 16px;
        font-weight: 400;
     }
-    #footer1>div>div:nth-child(2)>p
+    #footer1>div>div:nth-child(2)>a>p
     {
        color:RGB(102, 102, 102);
        font-style: Roboto, sans-serif;
        font-size: 14px;
        font-weight: 400;
+    }
+    #mail>button{
+        border: none;
+        background-color: #f98d29;
+        padding: 0px 12px;
+        border-radius: 5px;
     }
 .line
 {
@@ -167,4 +149,75 @@ margin-left: 240px;
 {
     display: flex;
     justify-content: space-between;
+}
+
+/* nav_bar */
+    #nav_row1 
+    {
+      display: flex;
+      justify-content: space-between;
+    }
+    #nav_row1>div>img
+    {
+        margin: 0px 10px;
+         height: 100px;
+        width: 150px;   
+     }
+    #nav_right
+    {
+     display: flex;
+     justify-content: space-between;
+    }
+    #nav_right>a
+    {
+       margin: 10px;
+    }
+    #nav_row2
+    {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+    }
+    
+    .nav-item
+    {
+        color:RGB(0, 0, 0);
+        font-style: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+
+/* nav row2 */
+
+#cat-drop
+{
+  width:1500px;
+}
+#drop-menu
+{
+  display: flex;
+  width:80%;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+#menu
+{
+  font-style: Roboto, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+#menu:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+  
+}
+#head
+{
+  color: black;
+  font-weight: bolder;
+  font-size: 14px;
+
 }
