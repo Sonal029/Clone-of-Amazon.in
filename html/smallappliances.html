@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <style>
-    .Fast_products
+     .Fast_products
 {
     /* border: 1px solid black; */
     display: grid;
@@ -53,6 +53,7 @@
         margin-left: 240px;
     }
 </style>
+<!-- http://localhost:3000/ballet_flats -->
 <body>
     <div class="Fast_products">
         
@@ -60,17 +61,19 @@
 </body>
 </html>
 <script>
-fetch("http://localhost:3000/small_appliance")
+    let cart_item=JSON.parse(localStorage.getItem("item_in_cart"))||[]
+fetch("../db.json")
      .then((res)=> res.json())
-     .then((data)=>{
-        console.log(data)
-        display_card(data)
-     })
-
+     .then((data)=>
+      {
+        //   console.log(data.ballet_flats)
+          display_card(data.small_appliance)
+      } 
+     )
 
     function display_card(data)
     {
-let x=document.querySelector(".Fast_products")
+        let x=document.querySelector(".Fast_products")
         data.forEach((el)=>{
         let card=document.createElement("div")
         let pro_img=document.createElement("img")
@@ -86,8 +89,15 @@ let x=document.querySelector(".Fast_products")
         price.innerText=el.price
         let offer=document.createElement("h3")
         offer.innerText=el.dicount
+        let add=document.createElement("button")
+        add.innerText="Add to Cart"
+        add.addEventListener("click", function()
+       {
+        cart_item.push(el)
+        localStorage.setItem("item_in_cart",JSON.stringify(cart_item))
+      })
         div.append(price,offer)
-        card.append(pro_img,title,rating,div)
+        card.append(pro_img,title,rating,div,add)
         x.append(card)
         }) 
     }
