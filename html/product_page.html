@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+   #orange
+   {
+    color: #f98d29;
+    font-weight: bolder;
+   } 
+   #flex_rating>a>p
+  {
+    color: #f98d29;
+   }
+   #icon
+   {
+    display:flex;
+   }
+   icon>img{
+    height: 10px;
+    width: 10px;
+   }
+   #price
+   {
+    display: flex;
+    justify-content: space-around;
+   }
+   #price>h3{
+    color: #f98d29;
+   }
+   #price>p:nth-child(1){
+    text-decoration: line-through;
+   }
+   #price>p:nth-child(2)
+   {
+    color: #04ca30;
+   }
+   #pro_offer>p:nth-child(1)
+   {
+    color: #04ca30;
+   }
+   #pro_offer>p:nth-child(2)>span
+   {
+    font-weight: bolder;
+   }
+   h5{
+    font-size: smaller;
+   }
+   #delivery
+   {
+    display: flex;
+    justify-content: space-between;
+   }
+   #delivery>div>p{
+    font-size: xx-small;
+   }
+   #flex1
+   {
+    display:flex;
+   }
+   pro_offer>p>span{
+    color: #f98d29;
+   }
+   #row1>h2
+   {
+    font: roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+      color: RGB(69, 90, 100);
+   }
+   #flex_rating>button
+   {
+     border: none;
+     background-color: #04ca30;
+     border-radius: 5px;
+     padding: 0px 10px;
+     font-size: small;
+     height: 20px;
+   }
+   #flex_rating
+   {
+    display: flex;
+    justify-content: space-around;
+   }
+</style>
+<div id="flex1">
+    <div>picture</div>
+
+
+
+    <!-- text side -->
+    <div>
+          <!-- 1st part -->
+        <div id="row1">
+            <h2>Mens Casual Business Watch</h2>
+            <div id="flex_rating">
+                <button>4.8/5 &#9733</button>
+                <a href=""><p>WRITE A REVIEW</p></a>
+            </div>
+            <div id="icon">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+            </div>
+            <div id="price">
+                <h3>&#8377 3,299</h3>
+                <p>&#8377 9,999.00</p>  
+                <p>UPTO 67% OFF</p>     
+            </div>
+            <div>
+                <p>(Save up to <span>&#8377 6700.00</span>)</p>
+            </div>
+            <div id="pro_offer">
+                 <p>CASH ON DELIVERY available on orders between &#8377 999 and &#8377 10,000 </p>
+                 <p>Get up to &#8377 500 OFF with coupon code <span><a>PREPAID</a></span></p>
+                <p>3 interst free payment</p>
+            </div>
+            <h5> Availablity:<span>In Stock</span></h5>
+            <hr id="orange"/>
+            <div>
+                <div id="delivery">
+                    <div>
+                        <img src="">
+                        <p>Guranteed Delivery in <br/>24 days <span>T&C Apply</span></p>
+                    </div>
+                    <div>
+                        <img src="">
+                        <p>COD Available</p>
+                        <p>&#8377 999 - &#8377 10,000</p>
+                    </div>
+                    <div>
+                        <img src="">
+                        <p>10 Days</p>
+                        <p>Replacement</p>
+                    </div>
+                    <div>
+                        <img src="">
+                        <p>6 months Warranty<span>T&C Apply</span></p>
+                        
+                    </div>
+                </div>
+                <p id="bold_b2b">For B2B/Bulk pricing <span>Click Here</span></p>
+            </div>
+            <hr id="orange"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
