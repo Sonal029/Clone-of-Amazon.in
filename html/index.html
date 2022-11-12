@@ -15,6 +15,8 @@
   </body>
     <title>Document</title>
 </head>
+<style>
+</style>
 <body>
 <!-- top black -->
 <div id="row1">
@@ -36,8 +38,8 @@
 <div id="nav_bar">
   <div id="nav_row1">
   <div>
-      <img src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png">
-      <input type="text" placeholder="Search">
+      <img src="C:\Users\shakambhari\Desktop\New folder (2)\Orange and Gray Tag Cart Virtual Shop Logo.png">
+      <input id="search_tag"type="text" placeholder="Search" onChange="search()">
   </div>
   <div id="nav_right">
       <a href=""><p>Seller's Corner</p></a> 
@@ -461,3 +463,13 @@
 
   </body>
 </html>
+<script>
+  function search()
+  {
+    let q=document.querySelector("#search_tag").value;
+    let new_data=bag.filter(function(ele)
+    {
+      return ele.title.toLowerCase().includes(q);
+    })
+  }
+</script>
