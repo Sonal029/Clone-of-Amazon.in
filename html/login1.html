@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Page</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="./index.html">Signup</a>
+        <a href="./signin.html">Signin</a>
+      </div>
+      <div id="signin">
+        <h1>Please Enter Your Details</h1>
+        <form id="form">
+          <label for="email">Enter your email</label>
+          <input type="email" id="email">
+          <label for="">Enter your password</label>
+          <input type="password"  id="password">
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+</body>
+<script>
+   let lsdata = JSON.parse(localStorage.getItem("account-data")) || [];
+  // console.log(lsdata)
+  let form = document.getElementById("form").addEventListener("submit", login);
+  function login(event){
+    event.preventDefault();
+
+    var email = document.getElementById("email").value;
+    var pass = document.getElementById("password").value;
+
+   let count = false
+
+    lsdata.forEach(element => {
+      if(email == "" && pass == ""){
+      // alert("Enter email/username")
+    } 
+    else if(email == element.email  && pass == element.pass){
+      count = true;
+    } else{
+      count = false;
+    }
+    });
+      if(count){
+        alert("Sign in successful")
+      } else {
+        alert("wrong")
+      }
+    }
+    
+  
+</script>
+</html>

@@ -16,10 +16,234 @@
     <title>Document</title>
 </head>
 <style>
+  *
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.product-container
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 20px;
+}
+#footer>p{
+    color: #aaaaaa;
+    font-family: Roboto, sans-serif;
+    font-size:12px;
+    font-weight: 400;
+}
+#footer>h4
+{
+    color:rgba(243, 146, 31, 1);
+    font-family: Roboto, sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    
+}
+.card_text
+{
+    font-style: Roboto, sans-serif;
+    letter-spacing: 0.8px;
+    padding: 0px,10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #455a64
+}
+#carouselExampleControls
+{
+    margin:0px 10px
+}
+#footer1
+    {
+        display:flex;
+        width: 80%;
+        margin: auto;
+        justify-content: space-between;
+    }
+    #channels>a>img
+    {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
+    
+    #channels
+    {
+        display: flex;
+        margin: 20px;
+    }
+    #footer1>div>div:nth-child(1)>p
+    {
+       color:#f8a847;
+       font-style: Roboto, sans-serif;
+       font-size: 16px;
+       font-weight: 400;
+    }
+    #footer1>div>div:nth-child(2)>a>p
+    {
+       color:RGB(102, 102, 102);
+       font-style: Roboto, sans-serif;
+       font-size: 14px;
+       font-weight: 400;
+    }
+    #mail>button{
+        border: none;
+        background-color: #f98d29;
+        padding: 0px 12px;
+        border-radius: 5px;
+    }
+.line
+{
+    height:1px;
+   width: 80%;
+    /* border: solid 1px black; */
+    margin-left: 20px;
+    background-color: black;
+}
+.fast_moving
+{
+    display: flex;
+}
+.Fast_products
+{
+    /* border: 1px solid black; */
+    margin: 5px;
+    padding: 5px;
+}
+#row1
+{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#row1>div:nth-child(2)
+{
+    width:300px;
+    display: flex;
+    justify-content: space-between;
+}
+#row1>div:nth-child(2)>a>h5
+{
+    padding-left: 5px;
+    color: white;
+    margin-right: 15px;
+}
+#row1>div:nth-child(2)>a>img
+{
+    width: 20px;
+    height: 20px;
+}
+#row1>div:nth-child(2)
+{
+    display: flex;
+    padding: 2px;
+}
+.Fast_products>button
+{
+display: block;
+flex-direction: row-reverse;
+color: white;
+background-color: #3cc101;
+border:none;
+justify-content: right;
+align-items: right;
+border-radius: 5px;
+padding: 0.5px 5px 0.5px 5px;
+margin-left: 240px;
+}
+.offer>h3{
+    color: #3cc101;
+    font-size: 18px
+}
+.offer>h2{
+    color: #f98d29;
+    font-size: 18px
+}
+.offer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav_bar */
+    #nav_row1 
+    {
+      display: flex;
+      justify-content: space-between;
+    }
+    #nav_row1>div>img
+    {
+        margin: 0px 10px;
+         height: 100px;
+        width: 150px;   
+     }
+    #nav_right
+    {
+     display: flex;
+     justify-content: space-between;
+    }
+    #nav_right>a
+    {
+       margin: 10px;
+    }
+    #nav_row2
+    {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+    }
+    
+    .nav-item
+    {
+        color:RGB(0, 0, 0);
+        font-style: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+
+/* nav row2 */
+
+#cat-drop
+{
+  width:1500px;
+}
+#drop-menu
+{
+  display: flex;
+  width:80%;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+#menu
+{
+  font-style: Roboto, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+#menu:hover{
+  text-decoration: underline;
+  font-weight: bolder;
+  
+}
+#head
+{
+  color: black;
+  font-weight: bolder;
+  font-size: 14px;
+
+}
 </style>
 <body>
 <!-- top black -->
-<div id="row1">
+<div style="position:fixed; background-color: white; width: 100%;">
+  <div id="row1">
     <div>
           
     </div>
@@ -169,14 +393,16 @@
   </div>
 </div>
 
+</div>
+
 
 
 
 
 <!-- carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner" >
+          <div class="carousel-item active" style="margin-top:200px">
             <img src="https://d64lkarmo2mrq.cloudfront.net/img/home/international-banner-02.webp" alt="...">
           </div>
           <div class="carousel-item">
