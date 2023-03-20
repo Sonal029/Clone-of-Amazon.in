@@ -1,33 +1,29 @@
-# Clone of MeanBuy.com
-MeanBuy is one of the leading e-commerce website and we
-made a clone of its online retail platform. This was a group
-project completed by a team of 4 members in 5 days.
+Clone of amazon.com
+Amazon website was our project for Unit-3 Construct week at Masai School. We have made this project in 5 days.
+Our clone asos website - (https://lustrous-gumption-92216f.netlify.app/)
 
-# Tech Stack
-- HTML
-- CSS
-- JAVA SCRIPT
-- GIT HUB
-- BOOTSTRAP
+Tech Stack
+-HTML -CSS -JAVA SCRIPT -GIT HUB
 
-## Features
+Features
+-Login and signin page -Sorting for price -Add to cart opt for adding items -Increment and Decrement Number of product according to that price is also changes 
 
-- Login and signin page.
-- Sorting for price.
-- Add to cart opt for adding items.
+Challenges we face during Construct week
 
-# Challenges we face during Construct week
+1.On the first day we did't know about each other what is our weakness and what is our strong areas. So it was very difficult to assign right thing to right person.
 
-- It was an individual project, and also my first project I didn't had an idea of how can I start it took me a day to understand the flow how can should i begin.
-- Next day I started with hardcoding the data to make the index page followed by making different pages and functionalities 
+2.Everyone's mind works differently and so ours. The website given to us. We changed some things in website. Everyone's idea was different. It is very difficult to choose one idea.
 
-# ![image](https://i.ibb.co/pvd76gt/Screenshot-20.png)
+As the navbar and footer were common for all the pages so we copied both of them in a single folder and imported them in every code, this was a kind of new method for us and we struggled while doing this step.
 
+4.Another challenge was to merge all of the files in a proper sequence which was again a difficult task for us because while merging and connecting all the pages some of the pages had the same name, and while running the site it was redirecting to some other pages so it was difficult to find the location and to rename the file.
 
+5.We faced challenges with CSS tags and class also, because when we merged CSS files for any page in which 2-3 members have worked, sometimes tags were colliding because of the same names of tags and classes.
 
-## Authors
+# ![image](https://i.ibb.co/stN21q3/Screenshot-34.png" )
 
-- [@Shakambhari](https://github.com/sonal029)
- 
+Team
+-Shankar S -Shakambhari -Suraj Yadav -Gopi Vishwakarma
 
-
+Authors
+@Shakambhari
